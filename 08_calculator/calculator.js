@@ -18,20 +18,33 @@ const sum = function(array) {
   return result;
 };
 
-const multiply = function() {
+const multiply = function(array) {
+  let result = 1;
+  console.log(array);
 
+	for(i = 0; i < array.length; i++ ){
+    result *= array[i];
+  };
+  return result;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+  result = a;
+	for(i = 1 ; i < b ; i++){
+    result *= a;
+  }
+  return result;
+
 };
 
 const factorial = function() {
 	
 };
 
-console.log(add(2,4));
-console.log(sum([1,2,3,4]));
+// console.log(add(2,4));
+// console.log(sum([1,2,3,4]));
+// console.log(multiply([1,2,3,4]));
+// console.log(power(3,4));
 
 // Do not edit below this line
 module.exports = {
