@@ -37,14 +37,19 @@ const power = function(a, b) {
 
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+	result = 1;
+  for(i = 1 ; i <= a ; i++){
+    result *= i;
+  }
+  return result;
 };
 
 // console.log(add(2,4));
 // console.log(sum([1,2,3,4]));
 // console.log(multiply([1,2,3,4]));
 // console.log(power(3,4));
+console.log(factorial(12));
 
 // Do not edit below this line
 module.exports = {
